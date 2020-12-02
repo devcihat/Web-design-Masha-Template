@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a style="color: #E6D7B6;" class="navbar-brand pt-2" href="index.html">INLUX</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto  pt-2">
+                    <li class="nav-item active">
+                        <a class="nav-link px-3" style="color: #F8F0CC;" href="index.html">HOME <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" style="color: #F8F0CC;" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" style="color: #F8F0CC;" href="#">OUR PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" style="color: #F8F0CC;" href="#">CONTACT</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div>
+            <h1 style="color: #26282d;text-transform: uppercase;font-weight: 300;" class="text-center pt-4">WHAT IS LUXURY INTERIOR DESIGN?</h1>
+            <p class="text-muted text-center">Home  /  About   /  What Is Luxury Interior Design?</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img class="w-100" src="img/luxury-interior-design.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+                <img class="w-100" src="img/modern-luxury.jpg" alt="">
+            </div>
+        </div>
+        <p style="background-color: #000;font-size: 18px;font-weight: 500;padding: 25px;line-height: 140%;margin-top: 40px;max-width: 850px;" class=" text-white mx-auto">Understanding the True Essence of Luxury Interior Design? The term luxury belongs to those evanescent words such as happiness, beauty, style; with a hard to comprehend nature and even more difficult to define…</p>
+    </div>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 style="margin-top: 60px;color: #26282d;font-weight: 300;margin-bottom: 15px;">Complementary to every style
+                    </h1>
+                    <p>Real luxury living cannot ever truly be given a specific definition. It’s a natural process that sets about as a seed deep within the soul and blossoms through our everyday lifestyle choices. However, there are a few common characteristics shared by luxe spaces. Let’s unpack the true essence of luxury interiors.</p>
+                </div>
+                <div class="col-md-6">
+                    <h1 style="margin-top: 60px;color: #26282d;font-weight: 300;margin-bottom: 15px;">Envisioning the whole</h1>
+                    <p>High-end interior design is more than arranging chandeliers and tufted settees to somebody else’s preconceived pattern of symmetry. It is about bringing forth the real diamond that shines within us all — authenticity… The authentic design is a canvas for creativity, inspiration, and exploration — and all three are the context and the story that forms the real footing in the art of luxury interiors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+     
+        <div class="row">
+            <div class="col-md-6">
+                <img class="w-100 img-thumbnail" src="img/luxury-1.jpg" alt="">
+            </div>
+            <div class="col-md-6">
+                <img class="w-100 img-thumbnail" src="img/luxury-interior-design.jpg" alt="">
+            </div>
+        </div>
+        <h1 style="margin-top: 40px;color: #26282d;font-weight: 300;margin-bottom: 15px;" class="text-center">Conclusion</h1>
+        <p 
+        style="color: #636363;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    border: 2px solid gray;
+    padding: 5px;">
+    Luxury interior design is a creative process led by <u style="color: black;">experienced interior designers</u>. It relates very closely to the client’s unique way of life and puts experiences first. It embraces the true joy of living and the beauty of the surrounding nature or vibrant city landscape.</p>
+        <p 
+        style="color: #636363;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    border: 2px solid gray;
+    padding: 5px;">
+    At every stage of the <u style="color: black;">design process</u>, every element is crucial; from a functional layout to the final decor touches. The modern luxury design explores new ideas, pays close attention to every detail and carefully considers materials and finishes.</p>
+        <p 
+        style="color: #636363;
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    border: 2px solid gray;
+    padding: 5px;">
+    To make the concept of “luxury” strong, the overall design should be well-executed without losing authenticity — and should reflect the user’s personal needs and taste, improve their quality of life and the experience of their interior environment.
+
+        </p>
+    </div>
+    <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>
+  About us</h2>
+  <div class="content">
+              <p>
+   UX/UI DESIGNER:<a class="text-white !important" href="https://www.instagram.com/beeelovaaa/">  Masha</a></p>
+   <p> Frontend Developer:<a class="text-white" href="github.com/Devcihat">  Cihat Süngü</a></p>
+  <div class="social">
+                <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+                <a href="#"><span class="fab fa-twitter"></span></a>
+                <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+                <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+              </div>
+  </div>
+  </div>
+  <div class="center box">
+            <h2>
+  Address</h2>
+  <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">Turkey</span>
+              </div>
+  <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+123-456-789</span>
+              </div>
+  <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text">abc@example.com</span>
+              </div>
+  </div>
+  </div>
+  <div class="right box">
+            <h2>
+  Contact us</h2>
+  <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">
+  Email *</div>
+  <input type="email" required>
+                </div>
+  <div class="msg">
+                  <div class="text">
+  Message *</div>
+  <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+  <changeit id=".msgForm" rows="2" cols="25" required></changeit> <!-- replace this changeit name to textarea -->
+                
+                <br />
+  <div class="btn">
+    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+
+  
+    
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
